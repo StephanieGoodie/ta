@@ -3,7 +3,7 @@ public class Main {
         Gold goldBar = new Gold(10);
         Sword magicSword = new Sword();
         Mace bigMace = new Mace("Mace", "Large Mace weapon", 12, 35);
-        Pillow softPillow = new Pillow();
+        Pillow softPillo = new Pillow();
 
     }
 }
