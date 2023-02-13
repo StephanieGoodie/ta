@@ -8,8 +8,11 @@ public class Main {
         Ogre greenOgre = new Ogre();
         Ogre redOgre = new Ogre();
         Zombie slowZombie = new Zombie(1);
+
         Zombie fastZombie = new Zombie(3);
+
         Dog spotDog = new Dog(1);
-        DemonMonkey quietMonkey = new DemonMonkey();
+
+        DemonMonkey quietMonkey = new DemonMonkey(3);
     }
 }
