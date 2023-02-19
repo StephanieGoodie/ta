@@ -14,5 +14,13 @@ public class Main {
         Dog spotDog = new Dog(1);
 
         DemonMonkey quietMonkey = new DemonMonkey(3);
+
+        Flee flee = new Flee();
+        Hit hitAttack = new Hit();
+        MoveNorth moveNorth = new MoveNorth();
+        MoveEast moveEast = new MoveEast();
+        MoveWest moveWest = new MoveWest();
+        MoveSouth moveSouth = new MoveSouth();
+
     }
 }
