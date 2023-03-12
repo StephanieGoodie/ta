@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
+        //load world
+        World world = new World();
+        world.load_tiles();
+
         Gold goldBar = new Gold(10);
         Sword magicSword = new Sword();
         Mace bigMace = new Mace("Mace", "Large Mace weapon", 12, 35);
