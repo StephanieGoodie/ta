@@ -1,7 +1,5 @@
-                LeaveCaveRoom
-            CyclopsRoom EmptyCavePath
-            EmptyCavePath
-            TreasureRoom    GloomyGardens
-OgreRoom    TreasureRoom    StartingRoom    TreasureRoom    Weaponry
-            Kitchen
-            Woods
+ 	 	 	 	LeaveCaveRoom
+			CyclopsRoom	EmptyCavePath
+ 	 	 	EmptyCavePath	  
+ 	 	 	TreasureRoom	 
+OgreRoom	TreasureRoom	StartingRoom	TreasureRoom	FindDaggerRoom
