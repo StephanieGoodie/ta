@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         //load world
         World world = new World();
         world.load_tiles();
@@ -13,9 +13,9 @@ public class Main {
         Ogre redOgre = new Ogre();
         Zombie slowZombie = new Zombie(1);
 
-        Zombie fastZombie = new Zombie(3);
+        //Zombie fastZombie = new Zombie(3);
 
-        Dog spotDog = new Dog(1);
+        Dog spotDog = new Dog(-2);
 
         DemonMonkey quietMonkey = new DemonMonkey(3);
 
@@ -26,5 +26,5 @@ public class Main {
         MoveWest moveWest = new MoveWest();
         MoveSouth moveSouth = new MoveSouth();
 
-    }
+    }*/
 }

@@ -1,20 +1,22 @@
 public class Enemy {
 
     protected String name;
-    protected int health;
+    protected int hp;
     protected int damage;
 
     public Enemy(String name, int health, int damage){
         this.name = name;
-        this.health = health;
+        this.hp = health;
         this.damage = damage;
     }
 
     public boolean IsAlive(){
-        return(this.health > 0);
+        return(this.hp > 0);
     }
 
+     boolean Isthreat = false;
+
     public String toString() {
-        return String.format("%s \n=====\n Damage: %s \nHealth: %d \n", this.name, this.damage, this.health);
+        return String.format("%s \n=====\n Damage: %s \nHealth: %d \n", this.name, this.damage, this.hp);
     }
 }

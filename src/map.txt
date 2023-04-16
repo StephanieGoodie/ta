@@ -1,5 +1,5 @@
  	 	 	 	LeaveCaveRoom
-			CyclopsRoom	EmptyCavePath
+			GiantSpiderRoom	EmptyCavePath
  	 	 	EmptyCavePath	  
  	 	 	TreasureRoom	 
 OgreRoom	TreasureRoom	StartingRoom	TreasureRoom	FindDaggerRoom
