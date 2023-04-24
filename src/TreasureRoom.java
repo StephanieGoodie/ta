@@ -9,4 +9,6 @@ public class TreasureRoom extends MapTile{
     public String intro_text(){
         return TREAS_INTRO[(int) (java.lang.Math.random() * TREAS_INTRO.length)];
     }
+
+    public void modify_player(Player player){}
 }

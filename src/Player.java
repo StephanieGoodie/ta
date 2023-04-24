@@ -39,7 +39,7 @@ public class Player {
         inventory.add(new Gold(15));
         inventory.add(new Pillow());
         //inventory.add(new Rock());
-        this.hp = 140; // Health Points
+        this.hp = 100; // Health Points
         this.location_x = World.Starting_Position.x;
         this.location_y = World.Starting_Position.y;
         this.victory = false; //no victory on start up
@@ -57,9 +57,9 @@ public class Player {
         do_action(available_moves[r]);
 }*/
 
-    public boolean is_alive(){
+    /*public boolean is_alive(){
         return (hp > 0);   //Greater than zero value then you are still alive
-    }
+    }*/
     //
     public void print_inventory(){
         int totalGold=0;Gold geld=null ;
@@ -170,6 +170,7 @@ public class Player {
         move(0,-1);
     }
 
+
     public void doFlee(MapTile mp)
     {
         ArrayList<Action> available_moves = mp.adjacent_moves();
@@ -193,12 +194,12 @@ public class Player {
                 }
             }
         } //End Code block for loop
-        System.out.printf("You use %s against %s!",best_weapon.name, enemy.name);
+        System.out.printf("\nYou use %s against %s! ",best_weapon.name, enemy.name);
         enemy.hp -= best_weapon.getDamage();
         if (!enemy.IsAlive()){
-            System.out.printf("You killed %s!",enemy.name);
+            System.out.printf("You killed %s! ",enemy.name);
         }else{
-            System.out.printf("%s HP is %d.",enemy.name, enemy.hp);
+            System.out.printf("%s Health is %d.",enemy.name, enemy.hp);
         }
     }
 
@@ -220,25 +221,23 @@ public class Player {
             }else if (action instanceof ViewInventory)
             {
                 print_inventory();
-            }else if (action instanceof Flee)
+            } else if (action instanceof Flee)
             {
                 doFlee(mp);
             }
-
-        }
-        else if (action instanceof Hit)
-        {
-            attackEnemy(kwargs);
-        }
+            } else if (action instanceof Hit)
+            {
+                attackEnemy(kwargs);
+            }
 
     } //End Code block do_attack method*/
-    public Player(String name,short hp,int stamina,int damage,boolean life){
+    /*public Player(String name,short hp,int stamina,int damage,boolean life){
         this.name = name;
         this.hp = hp;
         this.stamina = stamina;
         this.damage = damage;
         this.life = life;
-    }
+    }*/
     /*public Player(String name){
         this.name = name;}*/
 

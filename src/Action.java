@@ -1,7 +1,7 @@
 public class Action {
     private Method method;
     private char hotkey;
-    public char getHotkey() {
+    public  char getHotkey() {
         return hotkey;
     }
     public void setHotkey(char hotkey) {

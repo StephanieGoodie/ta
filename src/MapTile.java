@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.*;
 public class MapTile {
     int x;
@@ -31,7 +32,7 @@ public class MapTile {
         return true;
     }
 
-    public void modify_player(Player player){
+    public void modify_player(Player player) throws IOException {
         //throw new UnsupportedOperationException();
     }
     public String intro_text() {

@@ -8,7 +8,7 @@ public class EnemyRoom extends MapTile {
     public EnemyRoom(int x, int y) {
         super(x, y);
     }
-    public void modify_player(Player player) {
+    /*public void modify_player(Player player) {
         if (enemy.IsAlive()) {
             Player.hp -= enemy.damage;
 
@@ -16,5 +16,5 @@ public class EnemyRoom extends MapTile {
 
 
         }
-    }
+    }*/
 }

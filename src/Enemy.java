@@ -9,12 +9,12 @@ public class Enemy {
         this.hp = health;
         this.damage = damage;
     }
-
+    public String getName() {return name;}
     public boolean IsAlive(){
         return(this.hp > 0);
     }
 
-     boolean Isthreat = false;
+     public static boolean Isthreat = false;
 
     public String toString() {
         return String.format("%s \n=====\n Damage: %s \nHealth: %d \n", this.name, this.damage, this.hp);

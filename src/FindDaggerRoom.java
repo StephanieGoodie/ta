@@ -8,4 +8,8 @@ public class FindDaggerRoom extends MapTile{
     public String intro_text(){
         return OGRE_INTRO[(int) (java.lang.Math.random() * OGRE_INTRO.length)];
     }
+
+    public void modify_player(Player player){
+
+    }
 }

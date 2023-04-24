@@ -20,7 +20,7 @@ public class Game {
             while ((player.IsAlive()) && (!player.victory)){
                 room = World.tile_exists(player.location_x, player.location_y);
                 System.out.println(room.intro_text());
-                //room.modify_player(player);
+                room.modify_player(player);
 //			  // Check again since the room could have changed the player's state
                 if ((player.IsAlive()) && (!player.victory)){
                     System.out.print(" Choose an action:\n");
@@ -31,6 +31,7 @@ public class Game {
                     BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
                     System.out.println("Action: ");
                     char action_input = in.readLine().charAt(0);
+
                     for (Action action:available_actions){
                         if (action_input == action.getHotkey()){
                             player.do_action(action, action.getKwargs(),room);
