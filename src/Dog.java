@@ -25,6 +25,16 @@ public class Dog extends Enemy {
         }
 
     }
+    public void drawDog(){
+        System.out.println(
+                        "                        / \\__\n" +
+                                "                      (    @\\___\n" +
+                                "                      /         O\n" +
+                                "                     /   (_____/\n" +
+                                "                    /_____/   U\n"
+
+        );
+    }
 
     public void Dogattack(Dog dog) {
         //Enemy dog = new Dog();

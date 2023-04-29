@@ -18,12 +18,12 @@ public class StartingRoom extends MapTile {
 
     @Override
     public void modify_player(Player player) throws IOException {
-       int rHapp =  (int) (java.lang.Math.random() * 10);
+       int rHapp =  (int) (java.lang.Math.random() * 9);
         if (rHapp == 3 || rHapp == 6){
             Dog dog = new Dog();
             }
         if(rHapp == 2 || rHapp == 4){
-           System.out.print("The floor is muddy");
+           System.out.print("We need to get out of here");
         }
         if(rHapp == 5 || rHapp == 7 || rHapp == 8 || rHapp == 9){
             System.out.print("Something peeks out of a stone in a corner \n Would you check it out? y/n: ");
@@ -33,7 +33,7 @@ public class StartingRoom extends MapTile {
                 int rInput = new Random().nextInt(5);
                 if (rInput == 1) {
                     System.out.print("You now have a map");
-                    Player.inventory.add(new Map());
+                    Player.inventory.add(new Mapp());
                 }
                 else if (rInput == 2){System.out.print("Oh... this is a detached torso of a dried-up zombie");
                     if (((int) (java.lang.Math.random() * 3)) % 2 == 0) {
@@ -52,6 +52,7 @@ public class StartingRoom extends MapTile {
                     if (dog.amicability <= 5) {
                         dog.Isthreat = true;
                         dog.Dogattack(dog);
+                        dog.drawDog();
                         System.out.println("This dog does not seem friendly. Best Run! ");
                     } else if(dog.amicability > 5){
                         //Isfriend = true;

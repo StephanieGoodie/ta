@@ -2,4 +2,4 @@
 			GiantSpiderRoom	EmptyCavePath
  	 	 	EmptyCavePath	  
  	 	 	TreasureRoom	 
-OgreRoom	TreasureRoom	StartingRoom	TreasureRoom	FindDaggerRoom
+OgreRoom	TreasureRoom	StartingRoom	TreasureRoom	EmptyCavePath

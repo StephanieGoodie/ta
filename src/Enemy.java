@@ -19,4 +19,8 @@ public class Enemy {
     public String toString() {
         return String.format("%s \n=====\n Damage: %s \nHealth: %d \n", this.name, this.damage, this.hp);
     }
+
+    public static void drawsmolEnemy(){
+        System.out.println("(╯ಠ益ಠ)╯");
+    }
 }

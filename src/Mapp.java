@@ -1,5 +1,5 @@
-public class Map extends Item{
-    public Map() {
+public class Mapp extends Item{
+    public Mapp() {
         super("Map", "Fragile paper with inky illustrations on it", 3);
     }
 }
