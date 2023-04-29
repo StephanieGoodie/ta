@@ -26,7 +26,6 @@ public class Zombie extends Enemy {
                 }
             }
         }
-    }
 
     public static void drawZombie(){
         System.out.println("    _____\n" +
